@@ -1,204 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Свёрточная нейронная сеть</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;900&family=Orbitron&family=Roboto&display=swap"
+        rel="stylesheet">
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+
+        section::after {
+            visibility: hidden;
+        }
     </style>
 </head>
+
 <body class="shower list">
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+    <!-- <header class="caption">
+        <h1>Свёрточная нейронная сеть</h1>
+        <p>Нгуен Куй Тхань, ИУ3И-31М</p>
+    </header> -->
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        <p>Свёрточная <br />нейронная <br />сеть</p>
+        <div>по курсу «Мультимедиа технологии»</div>
+        <div>
+            <p>Нгуен Куй Тхань</p>
+            <p>ИУ3И-31М</p>
         </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+            <img class="cover" src="pictures/background/background-01.png" alt="">
         </figure>
     </section>
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
+    <section class="slide" id="slide-2">
+        <div class="content">
+            <p class="content-number">01</p>
+            <p class="content-text body-font">Введение в компьютерное зрение
+            </p>
+        </div>
+        <div class="content">
+            <p class="content-number">02</p>
+            <p class="content-text body-font">Что такое CNN?
+            </p>
+        </div>
+        <div class="content">
+            <p class="content-number">03</p>
+            <p class="content-text body-font">Различные типы CNN и их использование
+            </p>
+        </div>
+        <div class="content">
+            <p class="content-number">04</p>
+            <p class="content-text body-font">CNN в компьютерном зрении
+            </p>
+        </div>
+        <div class="content">
+            <p class="content-number">05</p>
+            <p class="content-text body-font">Применение компьютерного зрения
+            </p>
+        </div>
+        <div class="content">
+            <p class="content-number">06</p>
+            <p class="content-text body-font">Заключение
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
+            </p>
+        </div>
         <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/background/background-02.png" alt="">
         </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+    <section class="slide" id="slide-3">
+        <p class="header-font">Введение в компьютерное зрение
+        </p>
+        <div class="slide3-body">
+            <p class="body-font">Компьютерное зрение занимается автоматическим извлечением, анализом и пониманием
+                полезной
+                информации из одного изображения или последовательности изображений.
+            </p>
+            <p class="body-font center-me">или</p>
+            <p class="body-font">Это междисциплинарная область, которая занимается изучением того, как можно заставить
+                компьютеры получать высокоуровневое понимание цифровых изображений или видео.
+            </p>
+
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-03.png" alt="">
+        </figure>
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
+    <section class="slide" id="slide-4">
+        <p class="header-font">Что такое CNN (Convolution Neural Network)
+        </p>
+        <div class="slide4-body">
+            <p class="body-font">Это класс глубокого обучения.</p>
+            <p class="body-font">Сверточная нейронная сеть (ConvNet или CNN) является одной из основных категорий для
+                распознавания изображений, классификации изображений, обнаружения объектов, распознавания лиц и т. д.
+            </p>
+            <p class="body-font">Это похоже на базовую нейронную сеть. CNN также имеет обучаемые параметры, такие как
+                нейронная сеть, то есть веса, смещения и т. д.</p>
+            <p class="body-font">CNN активно используется в компьютерном зрении.</p>
+            <p class="sub-body-font">- The Convolution Layer</p>
+            <p class="sub-body-font">- The Pooling Layer</p>
+            <p class="sub-body-font">- The Output Layer (or) Fully Connected Layer</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-04.png" alt="">
+        </figure>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <section class="slide" id="slide-5">
+        <p class="header-font">Архитектура CNN
+        </p>
+        <div class="slide5-body">
+            <img src="pictures/slide5.png" alt="" />
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-05.png" alt="">
+        </figure>
+    </section>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+    <section class="slide" id="slide-6">
+        <p class="header-font">Слой свертки (Convolution Layer)
+        </p>
+        <p class="body-font">- Компьютеры считывают изображения в виде пикселей и выражаются в виде матрицы (NxNx3) —
+            (высота по ширине по глубине).</p>
+        <p class="body-font">- Верточный слой использует набор обучаемых фильтров. Фильтр используется для обнаружения
+            наличия определенных функций или шаблонов, присутствующих в исходном изображении (входе).</p>
+        <p class="body-font">- Обычно он выражается в виде матрицы (MxMx3) меньшего размера, но той же глубины, что и
+            входной файл.</p>
+        <p class="body-font">- Этот фильтр свертывается (перемещается) по ширине и высоте входного файла, и скалярное
+            произведение вычисляется для получения карты активации.</p>
+
+        <figure>
+            <img class="cover" src="pictures/background/background-06.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-7">
+        <p class="header-font">Слой свертки (Convolution Layer)
+        </p>
+        <div class="slide7-body">
+            <img src="pictures/slide7.jpg" alt="" />
+        </div>
+
+        <figure>
+            <img class="cover" src="pictures/background/background-07.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-8">
+        <p class="header-font">Слой свертки (Convolution Layer)
+        </p>
+        <div class="slide8-body">
+            <p class="body-font">Размер выходного объема контролируется тремя параметрами, которые нам необходимо
+                определить
+                перед выполнением шага свертки:</p>
+            <p class="sub-body-font">- Глубина: Глубина соответствует количеству фильтров, которые мы используем для
+                операции
+                свертки.</p>
+            <p class="sub-body-font">- Шаг: Шаг — это количество пикселей, на которое мы перемещаем матрицу фильтра по
+                входной
+                матрице.</p>
+            <p class="sub-body-font">- Заполнение нулями: иногда удобно дополнить входную матрицу нулями вокруг границы,
+                чтобы
+                мы могли применить фильтр к граничащим элементам нашей матрицы входного изображения.</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-08.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-9">
+        <p class="header-font">Pooling Layer
+        </p>
+        <div class="slide9-body">
+            <p class="body-font">- Его можно увидеть между слоями свертки в архитектуре CNN.</p>
+            <p class="body-font">- Этот слой в основном уменьшает количество параметров и вычислений в сети.</p>
+            <p class="body-font">- Pooling выполняется с единственной целью уменьшения пространственного размера
+                изображения.</p>
+            <p class="body-font">- Pooling выполняется независимо для каждого измерения глубины, поэтому глубина
+                изображения остается неизменной. Наиболее распространенной формой слоя pooling является max pooling.</p>
+            <div class="slide9-body-img">
+                <img src="pictures/slide9.png" alt="" />
+            </div>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-09.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-10">
+        <p class="header-font">Выходной слой (Output Layer)
+        </p>
+        <div class="slide10-body">
+            <p class="body-font">- После нескольких слоев свертки и заполнения нам понадобится результат в виде класса.
+            </p>
+            <p class="body-font">- Слои свертки и объединения смогут только извлекать объекты и уменьшать количество
+                параметров из исходных изображений.</p>
+            <p class="body-font">- Однако для генерации окончательного результата нам нужно применить полностью связный
+                слой, чтобы сгенерировать результат, равный количеству необходимых нам классов.</p>
+            <p class="body-font">- Слои свертки генерируют 3D-карты активации, а нам просто нужны выходные данные о том,
+                принадлежит ли изображение к определенному классу или нет.</p>
+            <p class="body-font">- Выходной слой будет иметь функцию потерь, подобную категориальной кросс-энтропии, для
+                вычисления ошибки прогнозирования.</p>
+            <p class="body-font">- После завершения прямого прохода обратное распространение ошибки начинает обновлять
+                вес и смещения для уменьшения ошибок и потерь.</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-10.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-11">
+        <p class="header-font">Выходной слой (Output Layer)
+        </p>
+        <div class="slide11-body">
+            <img src="pictures/slide11.png" alt="" />
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-11.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-12">
+        <p class="header-font">Типы CNN
+        </p>
+        <div class="slide12-body">
+            <p class="body-font">В зависимости от задач у нас есть разные CNN, которые используются в компьютерном
+                зрении.
+            </p>
+            <p class="body-font">Пять основных методов компьютерного зрения, которые можно реализовать с помощью CNN:
+            </p>
+            <p class="sub-body-font">- Классификация изображений (Image Classification)</p>
+            <p class="sub-body-font">- Обнаружение объектов (Object Detection)</p>
+            <p class="sub-body-font">- Отслеживание объектов (Object Tracking)</p>
+            <p class="sub-body-font">- Семантическая сегментация (Segmantic Segmentation)</p>
+            <p class="sub-body-font">- Сегментация экземпляров (Instance Segmentation)</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-12.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-13">
+        <p class="header-font">Image Classification
+        </p>
+        <div class="slide13-body">
+            <p class="body-font">При классификации изображений мы можем использовать традиционные модели CNN или
+                множество архитектур, разработанных разработчиками для уменьшения частоты ошибок и увеличения обучаемых
+                параметров:</p>
+            <p class="body-font">Пять основных методов компьютерного зрения, которые можно реализовать с помощью CNN:
+            </p>
+            <p class="sub-body-font">- LeNet (1998)</p>
+            <p class="sub-body-font">- AlexNet (2012)</p>
+            <p class="sub-body-font">- ZFNet (2013)</p>
+            <p class="sub-body-font">- GoogLeNet19 (2014)</p>
+            <p class="sub-body-font">- VGGNet 16 (2014)</p>
+            <p class="sub-body-font">- ResNet(2015)</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-13.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-14">
+        <p class="header-font">Object Detection
+        </p>
+        <div class="slide14-body">
+            <p class="body-font">Здесь реализация CNN отличается от предыдущей классификации изображений.</p>
+            <p class="body-font">Здесь задача состоит в том, чтобы идентифицировать объекты, присутствующие на
+                изображении, поэтому традиционная реализация CNN может не помочь:
+            </p>
+            <p class="sub-body-font">- R CNN </p>
+            <p class="sub-body-font">- Fast R CNN </p>
+            <p class="sub-body-font">- Faster R CNN </p>
+            <p class="sub-body-font">- YOLO </p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-14.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-15">
+        <p class="header-font">Применение компьютерного зрения
+        </p>
+        <div class="slide15-body">
+            <p class="body-font">Компьютерное зрение, технология искусственного интеллекта, которая позволяет
+                компьютерам понимать и маркировать изображения, теперь используется в магазинах повседневного спроса,
+                тестировании беспилотных автомобилей, ежедневной медицинской диагностике, а также для мониторинга
+                состояния сельскохозяйственных культур и домашнего скота.</p>
+            <p class="body-font">Ниже приведены различные варианты использования компьютерного зрения: </p>
+            <p class="sub-body-font">- Розничная торговля и безопасность розничной торговли</p>
+            <p class="sub-body-font">- Автомобильная промышленность</p>
+            <p class="sub-body-font">- Здравоохранение</p>
+            <p class="sub-body-font">- Банковское дело</p>
+            <p class="sub-body-font">- Сельское хозяйство</p>
+            <p class="sub-body-font">- Промышленность</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-15.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-16">
+        <p class="header-font">Заключение
+        </p>
+        <div class="slide16-body">
+            <p class="body-font">- Мы пытались понять, что такое компьютерное зрение.</p>
+            <p class="body-font">- Что такое CNN и ее различные уровни.</p>
+            <p class="body-font">- Различные типы CNN и их использование в методах компьютерного зрения.</p>
+            <p class="body-font">- Различные применения компьютерного зрения.</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-16.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide" id="slide-17">
+        <div class="slide17-body">
+            <p class="">Спасибо за внимание</p>
+        </div>
+        <figure>
+            <img class="cover" src="pictures/background/background-17.png" alt="">
+        </figure>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/thanhnq112/multimedia-cnn">Fork me on GitHub</a>
     </footer>
 
     <div class="progress"></div>
@@ -207,4 +345,5 @@
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>
